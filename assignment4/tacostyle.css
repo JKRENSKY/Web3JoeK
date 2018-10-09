@@ -6,6 +6,10 @@ body {
 	background-color: #FBFAFA;
 }
 
+.port {
+	text-align: center;
+}
+
 .taco-caro {
 	width: 100%;
 }

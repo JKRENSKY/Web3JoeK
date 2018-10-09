@@ -36,6 +36,11 @@ $('#playButton').click(function () {
 $('#pauseButton').click(function () {
     $('#homeCarousel').carousel('pause');
 }); 
+
+$(window).scroll(function(){
+    $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 1000);
+  });
+
       });
     </script>
   </head>
@@ -163,7 +168,7 @@ $('#pauseButton').click(function () {
 
       
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 port">
             <img class="rounded-circle anc1" src="content/4.jpg"  alt="Generic placeholder image" width="140" height="140">
             <h2>TacoCorp&copy; Beef Product</h2>
             <p>TacoCorp&copy; Specialty Branded Beef Derived Product Compound&copy;, made from only the finest TacoCorp&copy; Specialty Branded Beef Derived Product Compound&copy;. Enjoy your TacoCorp&copy; Specialty Branded Beef Derived Product Compound&copy; today!</p>
@@ -172,13 +177,13 @@ $('#pauseButton').click(function () {
 
 
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 port">
             <img class="rounded-circle" src="content/2.jpg"  alt="Generic placeholder image" width="140" height="140">
             <h2>TacoCorp&copy; Pork Derived Product</h2>
             <p>Next generation Pork Derived Product&copy;. Product viability may be altered depending on local microbiome, please use caution.</p>
 
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 port">
             <img class="rounded-circle" src="content/1.jpg"  alt="Generic placeholder image" width="140" height="140">
             <h2>TacoCorp&copy; Fish-Style Fish&copy;</h2>
             <p>Fish&copy; from TacoCorp&copy;. Enjoy today!</p>
