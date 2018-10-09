@@ -1,0 +1,51 @@
+.taco-bright {
+	color: #4B6AC7;
+}
+
+body {
+	background-color: #FBFAFA;
+}
+
+.taco-caro {
+	width: 100%;
+}
+
+.taco-jumbo {
+	background-image: url(content/prod1.jpg);
+	width: 100%;
+}
+.taco-jumbo2 {
+	background-image: url(content/1.jpg);
+	width: 100%;
+}
+.taco-jumbo3 {
+	background-image: url(content/crowd.jpg);
+	width: 100%;
+}
+.navbar-brand {
+	font-size: 2em;
+}
+.taco-jumbo0 {
+	min-height: 300px;
+}
+
+
+
+
+/* old style */
+/*
+h1 {
+	text-align: center;
+	color: #ff9b66;
+}
+body {
+	padding: 100px;
+	background-color: #bbceed;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+*/

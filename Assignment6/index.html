@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Placeholder</title>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#exampleModal').modal({
+          show:false,
+          backdrop:false
+        });
+        console.log($('#exampleModal'));
+
+$('#homeCarousel').carousel({
+  interval: 3000,
+
+
+});
+
+
+
+$('#playButton').click(function () {
+    $('#homeCarousel').carousel('cycle');
+});
+$('#pauseButton').click(function () {
+    $('#homeCarousel').carousel('pause');
+}); 
+      });
+    </script>
+  </head>
+
+<body>
+
+<!-- NAVBAR INITIATE -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand " style=" color: white;" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item taco-bright" href="more.html#a">A</a>
+          <a class="dropdown-item taco-bright" href="more.html#b">B</a>
+          <a class="dropdown-item taco-bright" href="more.html#c">C</a>
+        </div>
+
+      </li>
+      <li>  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" style="border-color:#A8CACE; background-color: grey;">
+  Subscribe
+</button></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- IM NOT FAT IM JUST JUMBOTRON -->
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #363A41;">
+    <br>
+        <div class="container" >
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1>Title</h1>
+                <p style="color: #363A41">Text</p>
+              </div>
+            <img class="d-block w-100" src="content/place1.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+          </div>
+          <div class="carousel-item taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1>Title</h1>
+                <p style="color: #363A41"> Text</p>
+              </div>
+            <img class="d-block w-100" src="content/place2.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>
+    <div id="carouselButtons" style="text-align: center;">
+    <button id="playButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-play">PLAY</span>
+     </button>
+    <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-pause">PAUSE</span>
+    </button>
+</div>
+
+<br>
+
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #ABA3A5">
+        <h5 class="modal-title" id="exampleModalLongTitle">Subscribe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #ABA3A5">
+
+      
+                            <div class="simple-subscription-form">
+                            <form>
+                              <h4>Subscribe</h4>
+                              <p>Receive updates and latest news direct from our team. Simply enter your email below :</p>
+                              <div class="input-group">
+                                <span class="input-group-label">
+                                  <i class="fa fa-envelope"></i>
+                                </span>
+                                <input class="input-group-field" type="email" placeholder="Email" required>
+                                <button class="button">Sign up now</button>
+                            </div>
+                            </form>
+                          
+                        </div>
+      
+      </div>
+      <div class="modal-footer" style="background-color: #ABA3A5">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="contentMain">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+
+</div>
+
+<!-- footer -->
+<div >
+<footer class="footer" style="background-color: #363A41; width: 100%;">
+      <div class="container">
+        <span class="text-muted">FOOTER</span>
+
+      </div>
+    </footer>
+  </div>
+</html>
+

@@ -1,0 +1,53 @@
+.taco-bright {
+	color: #4B6AC7;
+}
+
+body {
+	background-color: #FBFAFA;
+	font-family:  Verdana, Geneva, sans-serif;
+
+}
+
+.taco-caro {
+	width: 100%;
+}
+
+.navbar-brand {
+	font-size: 2em;
+}
+.taco-jumbo0 {
+	min-height: 300px;
+}
+
+.contentMain {
+	padding: 30px;
+}
+
+h2 {
+	margin-top : 20px;
+	margin-bottom : 20px;
+	background-color: #a2d6b2;
+	width: 50%;
+	border-radius: 5px;
+}
+
+h3 {
+	margin-top : 20px;
+	margin-bottom : 20px;
+	background-color: #a2d6b2;
+	width: 100%;
+	border-radius: 5px;]
+}
+
+
+.simple-subscription-form {
+  color: #fefefe;
+  padding: 2rem;
+  border-radius: 0;
+}
+
+.simple-subscription-form .button {
+  margin-bottom: 0;
+  border-radius: 0 0 0 0;
+}
+
