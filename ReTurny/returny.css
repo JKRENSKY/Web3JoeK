@@ -25,6 +25,14 @@ body {
 
 
 }
+
+
+#shrink {
+	height: 50%;
+	width: 50%;
+}
+
+
 .contentMain {
 
 }
@@ -74,6 +82,13 @@ body {
 }
 
 
+#start {
+	padding: 20px;
+}
+
+
+
+
 }
 
 
@@ -99,7 +114,9 @@ body {
 }
 
 
-
+#start {
+	padding: 40px;
+}
 
 
 
@@ -127,7 +144,9 @@ body {
 
 
 
-
+#start {
+	padding: 50px;
+}
 
 
 
