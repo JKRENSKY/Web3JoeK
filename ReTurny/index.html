@@ -1,0 +1,304 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ReTurny">
+    <meta name="author" content="Joe Krensky">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>ReTurny - Home</title>
+
+    <!-- Bootstrap core CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="returny.css" rel="stylesheet">
+
+<!-- scripity scrapity -->
+
+
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+});
+
+$('#homeCarousel').carousel({
+  interval: 5000,
+
+
+});
+$('#mobCarousel').carousel({
+  interval: 5000,
+
+
+});
+
+$(window).scroll(function(){
+    $("#homeCarousel, #mobCarousel").css("opacity", 1 - $(window).scrollTop() / 650);
+  });
+
+
+$('#playButton').click(function () {
+    $('#homeCarousel').carousel('cycle');
+});
+$('#pauseButton').click(function () {
+    $('#homeCarousel').carousel('pause');
+}); 
+      });
+    </script>
+
+
+
+
+  </head>
+
+  <body>
+
+
+
+
+
+
+
+
+<!-- nav shmav -->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">
+    <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" id="growmobile" alt="returny logo">
+    <span id="logo">ReTurny</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="team.html">Team</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="start.html" style="color:#F79420; ">Get Started!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- nav call to action -- >
+
+
+
+
+
+
+<!-- main body section -->
+
+
+
+<!-- jumbotron desktop -->
+
+<div class="jumbotron jumbotron-fluid" id="nonemobile" style="background-color: #363A41;">
+    <br>
+        <div class="container" >
+            <div id="homeCarousel"  class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1>Sharing</h1>
+              </div>
+            <img class="d-block w-100" src="img/mega1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1>Spinning</h1>
+              </div>
+            <img class="d-block w-100" src="img/mega2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1>Giving</h1>
+                <p style="color: #363A41"></p>
+              </div>
+            <img class="d-block w-100" src="img/mega3.jpg" alt="Second slide">
+          </div>
+        </div>
+       
+      </div>
+  </div>
+    <div id="carouselButtons" style="text-align: center;">
+    <button id="playButton" type="button" class="btn btn-dark btn-xs" style="border-color:#A8CACE;">
+        <span class="glyphicon glyphicon-play">PLAY</span>
+     </button>
+    <button id="pauseButton" type="button" class="btn btn-dark btn-xs" style="border-color:#A8CACE;">
+        <span class="glyphicon glyphicon-pause">PAUSE</span>
+    </button>
+</div>
+
+</div>
+
+
+
+<!-- Jumbotron mobile / tablet-->
+
+<div class="jumbotron jumbotron-fluid" id="nonedesk" style="background-color: #363A41;">
+    <br>
+        <div class="container" >
+            <div id="mobCarousel"  class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1 style="color: #363A41">Sharing</h1>
+              </div>
+            <img class="d-block w-100" src="img/mega_mobile1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1 style="color: #363A41"> Spinning</h1>
+              </div>
+            <img class="d-block w-100" src="img/mega_mobile2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item taco-caro">
+            <div class="carousel-caption" style="text-align: center; border-radius: 10px; background-color: #FBFAFA; color: black;">
+                <h1 style="color: #363A41"> Giving</h1>
+              </div>
+            <img class="d-block w-100" src="img/mega_mobile3.jpg" alt="Second slide">
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="contentMain">
+ <div class="center">
+
+  <h2 class="major">Our Mission</h2>
+  
+
+<div class="row" style="margin: 30px;">
+  <div class="col-12 pitch"><h3>Got a box of records collecting dust in the garage?</h3>
+    <br><h3>Why not get those records turning again!</h3><br><h4>At ReTurny our mission is to connect those with unused collections of records and equiptment with communities who lack access to vinyl music!<br>Through the use of deep learning and image recognition we are able to scan images of a users collection directly into our platform and create inventories with information like rarity and run.</h4></div>
+
+</div>
+<br>
+<h2 class="major">The Vinyl Legacy</h2>
+
+<div class="bg">
+
+
+       <div class="row pitch" style="margin: 30px;">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/small3.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Preservation</h2>
+            <p>Every year thousands of good records go unlistened to, we seek to find these wayward albums a home and bring music to the world! A frighteningly small fraction of records has been digitized, which means when a record is thrown away it could also be history going into the can.</p>
+
+            <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/small2.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Community</h2>
+            <p>We seek to bring people together with their local analog music enthusiasts, we hope to connect a community of likeminded individuals and eventually hold regional events and concerts!</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/small1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Share</h2>
+            <p>At the end of the day what we are about is sharing. We all have record collections full of gifts and inherited records, why not pass the love along?</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Learn More &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+<br>
+
+</div>
+
+
+<h2 class="major">Where Do I Sign Up?</h2>
+
+<div class="row" style="margin: 30px;">
+ <div class="col-12 pitch" style="margin-bottom: 50px;"><h3>Right here, buddy!<h3><br> <a href="start.html"><button type="button" class="btn btn-outline-secondary">Sign Me Up!</button></a></div>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- footer area -->
+
+
+<div class="fixed-bottom">
+<footer class="footer" style="background-color: #363A41; width: 100%;">
+      <div class="container">
+        <span class="text-muted">
+
+
+                        <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.svg" id="kill" width="30" height="30" class="d-inline-block align-top" id="growmobile" alt="returny logo">
+                        <span id="logo" style="color: white;">ReTurny</span>
+                      </a>
+                      
+                        ReTurny Was Created October 2018
+                     <!-- Button trigger modal -->
+
+
+        </span>
+
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+  </body>
+</html>

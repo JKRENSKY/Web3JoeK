@@ -1,0 +1,134 @@
+/* General Styling */
+
+
+
+
+
+body {
+	background-color: #1D1E21;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+
+
+.pitch {
+	background-color: #E8EDF9;
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 10px 10px grey;
+	
+
+
+
+
+
+}
+.contentMain {
+
+}
+
+.major {
+	background-color: #363A41;
+	color: white;
+	text-align: center;
+
+}
+
+.center {
+	
+}
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+/* Styles */
+
+
+#logo {
+	display: none;
+}
+
+#nonemobile {
+	display: none;
+}
+
+
+#growmobile {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+#kill {
+	display: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 1224px) {
+/* Styles */
+
+
+#nonemobile {
+	display: none;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1225px) {
+/* Styles */
+
+
+#nonedesk {
+	display: none;
+}
+
+.carousel {
+	width: 100%
+}
+
+
+
+
+
+
+
+}
