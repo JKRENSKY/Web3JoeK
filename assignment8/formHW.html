@@ -108,7 +108,7 @@ background-size: cover;}
         <div class="container">
             <fieldset>
               <label for="type">Tacos For You:</label>
-              <br>
+              <
               <select id="type" name="type" disabled>
 
               </select>
@@ -136,7 +136,7 @@ background-size: cover;}
         $('#type').removeAttr('disabled');
         $('#type').html('');
         
-        if($('#tacotype').click()){
+        if($('#tacotype').val() === 'chicken'){
           for(var i = 0; i < chickenType.length; i++){
             console.log(chickenType[i]);
             var htmlContent = '<option value="' + chickenType[i] + '">' + chickenType[i] + "</option>";

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- created by Joe K -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Prism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #404040;
+            animation: mymove 20s infinite;
+        }
+        .animatable {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #ff471a;
+            animation: moveIt 20s linear infinite;
+        }
+        .animatable1 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 200px;
+            background-color: #ff6600;
+            animation: moveIt 20s linear infinite;
+        }
+         .animatable2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 400px;
+            background-color:  #ff8000;
+            animation: moveIt 20s linear infinite;
+        }
+         .animatable3 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 600px;
+            background-color: #ff9900;
+            animation: moveIt 20s linear infinite;
+        }
+         .animatable4 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 800px;
+            background-color: #ffcc00;
+            animation: moveIt 20s linear infinite;
+        }   
+         .animatable5 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 1000px;
+            background-color: #ccff66;
+            animation: moveIt 20s linear infinite;
+        }   
+         .animatable6 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 1200px;
+            background-color: #00b300;
+            animation: moveIt 20s linear infinite;
+        }   
+         .animatable7 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 1400px;
+            background-color: #33ccff;
+            animation: moveIt 20s linear infinite;
+        }    
+        .stripe {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #52527a;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+        }     
+        .stripe1 {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #3d3d5c;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+            animation-delay: .5s;
+        }
+        .stripe2 {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:  #29293d;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+            animation-delay: 1s;
+        } 
+        .stripe3 {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #3d3d5c;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+            animation-delay: 1.5s;
+        }     
+        .stripe4 {
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:  #f0f0f5;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+            animation-delay: 1.75s;
+        }
+        .stripe5 {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:  #29293d;
+            animation: stripeIt 20s linear infinite;
+            opacity: 0.5;
+            animation-delay: 2s;
+        }   
+
+        @keyframes mymove {
+        25% {background-color: #262626;}
+
+        50% {background-color: #2e004d;}
+
+        75% {background-color:  #666666;}
+
+        90% {background-color: #0a0a0f;}
+    }
+        @keyframes moveIt {
+        0%{
+                top: 100%;
+                left: 100%;
+                box-shadow: 2px 5px #33334d;
+                height:100px;
+                width:100px;
+                opacity: 0.5;
+        }
+        25%{
+                top: 50%;
+                left: 50%;
+                box-shadow: 5px 10px #33334d;
+                height:200px;
+                width: 200px;
+                opacity: 0.6;
+        }
+        50%{
+                box-shadow: 5px 10px #33334d;
+                height:400px;
+                opacity: 0.7;
+        }    
+        75%{
+                box-shadow: 5px 10px #33334d;
+                height:600px;
+                opacity: 1.0;
+        }
+        85%{
+                box-shadow: 5px 10px #33334d;
+                height:400px;
+                opacity: 1.0;
+        }
+
+                100%{
+                box-shadow: 5px 10px #33334d;
+                height:0px;
+                opacity: 0.5;
+        }            
+        }
+        @keyframes stripeIt {
+        50%{
+                top:100%;
+
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stripe"></div> 
+    <div class="stripe1"></div>   
+    <div class="stripe2"></div>    
+    <div class="stripe3"></div>  
+    <div class="animatable"></div>
+    <div class="animatable1"></div>
+    <div class="animatable2"></div>
+    <div class="animatable3"></div>
+    <div class="animatable4"></div>
+    <div class="animatable5"></div>
+    <div class="animatable6"></div>
+    <div class="animatable7"></div>  
+    <div class="stripe4"></div>  
+    <div class="stripe5"></div>  
+        
+</body>
+</html>
