@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<div style="border: 2px dotted black; margin: 10px; height: 500px; width: 620px;">
+    <canvas id="Box" width="600" height="480">
+        Get a new browser to see this!
+    </canvas>
+
+    <script>
+
+        function initialize(){
+            window.requestAnimationFrame(draw);
+        }
+        function draw() {
+            var canvas = document.getElementById("Box");
+            var context  = canvas.getContext("2d");
+
+            
+            context.fillStyle = "rgb(102, 204, 255, 0.5)";
+            context.fillRect(20, 20, 600, 100);
+            context.fillStyle = "rgb(153, 153, 255, 0.5)";
+            context.fillRect(20, 140, 600, 100);
+            context.fillStyle = "rgb(128, 255, 170, 0.5)";
+            context.fillRect(20, 260, 600, 100);
+            context.fillStyle = "rgb(255, 224, 102, 0.5)";
+            context.fillRect(20, 380, 600, 100);
+            context.clearRect(canvas.width, canvas.height, 40, 40);
+            window.requestAnimationFrame(draw);
+
+            context.fillStyle = "rgb(166, 166, 166, 0.5)";
+            context.fillRect(20, 20, 100, 600);
+            context.fillRect(140, 20, 100, 600);
+            context.fillRect(260, 20, 100, 600);
+            context.fillRect(380, 20, 100, 600);
+            context.fillRect(500, 20, 100, 600);
+
+            
+        }
+
+    initialize();
+  
+        
+
+    
+    </script>
+    
+</body>
+</html>
