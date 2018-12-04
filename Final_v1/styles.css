@@ -10,7 +10,7 @@
 }
 
 .jumbotron-fluid h1, h2{
-	color: darkgrey;
+	color: #adebad;
 }
 .jumbotron-fluid p{
 	color: black;
@@ -20,22 +20,24 @@
 	background-color: #343a40;
 	color: white;
 	border-color: white;
+	border-radius: 10px;
 }
 .card h2{
 	color: #adebad;
+
 }
 .note {
 	color: red;
 }
 .splash {
-	background-image: url("img/canna1.jpeg");
+	background-color: darkgrey;
 	background-repeat: no-repeat, repeat;
 	background-size: cover;
 }
 .title {
 	color: #adebad;
 	font-weight: bolder;
-	text-shadow: 2px 2px black;
+	
 
 }
 .lead {
@@ -44,7 +46,7 @@
 .blurb {
 	color: white;
 	font-weight: bold;
-	text-shadow: 2px 2px black;
+	
 
 }
 body {
