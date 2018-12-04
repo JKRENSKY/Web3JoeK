@@ -1,0 +1,11 @@
+.jumbotron {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.jumbotron-fluid {
+	margin-top: 0px;
+}
+.card {
+	padding: 40px;
+}
