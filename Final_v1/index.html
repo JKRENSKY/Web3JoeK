@@ -12,8 +12,13 @@
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS, Javascript, Jquery, etc -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom site styles for this template -->
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -21,51 +26,59 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Expand at md</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">LOGO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+        <li class="nav-item dropdown navbar-dark bg-dark">
+            <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BUILD</a>
+            <div class="dropdown-menu bg-dark navbar-dark" aria-labelledby="dropdown04">
+              <a class="dropdown-item bg-dark navbar-dark nav-link" href="#">Capsules</a>
+              <a class="dropdown-item bg-dark navbar-dark nav-link" href="#">Cartridges</a>
+              <a class="dropdown-item bg-dark navbar-dark  nav-link" href="#">Tinctures</a>
+              <a class="dropdown-item bg-dark navbar-dark nav-link" href="#">Topicals</a>
             </div>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CART</a>
+          </li>          
+
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" type="text" placeholder="Search">
-        </form>
+
+
       </div>
     </nav>
 
     <main role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="jumbotron splash" style="margin-top: 50px;">
         <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <h1 class="display-3 title">Welcome to Cannabis 2.0</h1>
+          <p class="note">*change to slideshow?*</p>
+          <p class="lead blurb">The therapeutic benefits of cannabinoids and terpenes</p>
+          <p class="lead blurb">Mixed to order for every customer</p>
+          <p class="lead blurb">Zero THC guaranteed - Non narcotic</p>
         </div>
       </div>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Cannabinoids</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-8">Cannabinoids</h1>
+          <p class="lead">Cannabis contains over 113 cannabinoids which work together to produce the effects of the plant. With modern advances in extraction we can now naturally refine individual cannabinoids without the illegal or intoxicating properties of THC.</p>
+          <p class="note">*horizontal icon scroll for cards*</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
@@ -78,17 +91,17 @@
         <div class="row">
           <div class="col-sm-4 card">
             <h2>CBD</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus. </p>
             
           </div>
           <div class="col-sm-4 card">
             <h2>CBC</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
             
           </div>
           <div class="col-sm-4 card">
             <h2>CBG</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
            
           </div>
         </div>
@@ -96,17 +109,17 @@
         <div class="row">
           <div class="col-sm-4 card">
             <h2>CBH</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
            
           </div>
           <div class="col-sm-4 card">
             <h2>CBL</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus. </p>
            
           </div>
           <div class="col-sm-4 card">
             <h2>CBV</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
             
           </div>
         </div>
@@ -120,7 +133,8 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Terpenes</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <p class="lead">Terpenes are fragrant oils that give cannabis its aromatic diversity. We carry an assortment of the natural terpenes that give cannabis its flavor profile.</p>
+          <p class="note">*horizontal icon scroll for cards*</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
@@ -133,17 +147,17 @@
         <div class="row">
           <div class="col-sm-4 card">
             <h2>Humulene</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
             
           </div>
           <div class="col-sm-4 card">
             <h2>Limonene</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
             
           </div>
           <div class="col-sm-4 card">
             <h2>Linalool</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
            
           </div>
         </div>
@@ -151,17 +165,17 @@
         <div class="row">
           <div class="col-sm-4 card">
             <h2>Myrcene</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
            
           </div>
           <div class="col-sm-4 card">
             <h2>Ocimene</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p>Donec id elit non mi porta gravida at eget metus.  </p>
            
           </div>
           <div class="col-sm-4 card">
             <h2>Pinene</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Donec sed odio dui.</p>
             
           </div>
         </div>
@@ -170,9 +184,34 @@
 
  <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Terpenes</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <h1 class="display-4">Get Started</h1>
+          <p class="lead">We currently carry 4 different products for you to customize with your desired cannabinoid and terpene profile.</p>
+                  <div class="row">
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Capsules</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">BUILD &raquo;</a></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Cartridges</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">BUILD &raquo;</a></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Tinctures</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">BUILD &raquo;</a></p>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Topicals</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">BUILD &raquo;</a></p>
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
         </div>
  </div>
 
