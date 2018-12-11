@@ -1,0 +1,446 @@
+/*General Structure*/
+
+.jumbotron1 {
+  min-height: 800px;
+}
+
+.jumbotron2 {
+  height: 350px;
+}
+
+.jumbotron-fluid {
+  margin-top: 0px;
+  background-color: white;
+  padding: 0px;
+  margin-top: 50px;
+
+}
+
+.card {
+  padding: 40px;
+  background-color: #343a40;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+}
+
+
+.splash {
+  background-color: darkgrey;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-image: url("../img/bgdemo.png");
+
+}
+
+
+.insomnia {
+  padding: 50px;
+}
+
+
+
+
+
+.container-fluid {
+  background-color: white;
+  padding: 50px;
+}
+
+.lead {
+  color: black
+}
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+ 
+
+}
+.featurette-image {
+  
+  border-radius: 15px 50px;
+
+}
+.card-img-top {
+  border-radius: 20px 5px;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: white;
+  background: url("../img/bg.png");
+  background-repeat: repeat;
+  background-size: 150px 200px;
+
+}
+.info {
+  border-radius: 10px 5px;
+  background-color: #4747d1;
+  border-style: none;
+}
+
+
+
+.title {
+  background-color: #343a40;
+  margin-bottom: 0px;
+  color: white;
+  padding-left: 50px;
+  font-weight: lighter;
+}
+
+.chonk {
+  background-color: white;
+  border-radius: 35px 5px;
+  padding: 20px;
+}
+.smolchonk {
+  background-color: #343a40;
+  border-radius: 35px 5px;
+  padding: 20px;
+  height: 100%;
+
+
+}
+
+.bigchonk {
+  padding-left: 50px;
+  margin-left: 0px;
+}
+
+.product1 {
+  border-radius: 20px 45px;
+}
+.shop {
+  margin: 10px;
+}
+select {
+     -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+    width: 200px;
+}
+select:hover{
+  background-color: #f9d89f
+}
+
+/*typography*/
+
+
+.jumbotron-fluid h1, h2{
+  color: #adebad;
+}
+.jumbotron-fluid p{
+  color: black;
+}
+
+.card h2{
+  color: #adebad;
+
+}
+.note {
+  color: red;
+}
+
+
+
+
+.blurb {
+  color: white;
+  font-weight: bold;
+  
+
+}
+
+
+
+
+
+
+/*navbar stuff*/
+
+
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left :0;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.scrolled{
+  background-color:  #161b1d;
+  transition: 0.7s;
+}
+.navbar-toggler-icon {
+	background-image: url("../img/logo.svg");
+  width: 60px;
+  height: 60px;
+}
+
+
+.navbar a {
+	color: white;
+	
+}
+
+
+
+.navbar a:hover {
+	color: #f4b342;
+	
+
+}
+
+.subbar {
+  background-color:  #343a40;
+}
+
+.nav-link {
+  font-size: 135%;
+  vertical-align: baseline;
+}
+
+/* footer stuff*/
+
+
+.fda a {
+	color: #f48941;
+}
+
+
+
+.fda a:hover {
+	color: #f4b342;
+	text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #343a40;
+  font-size: .6em;
+}
+
+
+/*buttons*/
+
+
+.btn {
+  background-color: #f4b342;
+  border-style: none;
+}
+.btn:hover {
+  background-color: #f48941;
+  border-style: none;
+}
+
+.btn-lg {
+    border-radius: 20px 5px;
+    padding-left: 40px;
+    padding-right: 60px;
+    border-style: none;
+}
+.end {
+  background-color: #f48941;
+}
+.end:hover {
+  background-color: #f4b342;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+
+/* CART CSS */
+#cart-container {
+  float: right;
+  width: 50px;
+  position: relative;
+}
+
+#itemCount {
+  position: absolute;
+  display: none;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f48941;
+  color: white;
+  text-align: center;
+}
+
+
+
+.item {
+  width: 31%;
+  float: left;
+  margin: 1%;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+#dis{
+  display: none;
+}
+
+
+
+
+/*hellish pile of media queries*/
+
+
+
+
+
+
+
+
+
+/*too scared to delete*/
+
+
+
+@media ( max-width: 768px) {
+
+.btn-lg {
+    border-radius: 20px 5px;
+
+    width: 100%;
+}
+.text-muted {
+  font-size: 70%;
+}
+
+
+.nav-link {
+  font-size: 160%;
+
+}
+
+.jumbotron1 {
+  min-height: 400px;
+}
+
+footer {
+  display: none;
+}
+
+.center{
+  text-align: center;
+}
+
+
+.card {
+  padding: 15px;
+}
+
+.bigchonk {
+  padding-left: 35px;
+  margin-left: 0px;
+  padding-right: 35px;
+}
+.title{
+  padding-left: 35px;
+}
+#dis{
+  display: inline;
+}
+
+.insomnia {
+  padding: 20px;
+}
+
+}
+
+
+
+@media (max-width: 575px) {
+.micro {
+  width: 200px;
+  margin-left: 50px;
+}
+}
+
+
+
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
