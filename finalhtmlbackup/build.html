@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset "utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="Joe Krensky Test">
+<title>TerpChef</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   
+    /* cart code*/
+  var itemCount = 0;
+    /*Cart Add*/
+  $('.add').click(function (){
+    itemCount ++;
+    $('#itemCount').html(itemCount).css('display', 'block');
+  }); 
+  /*cart clear*/
+  $('.clear').click(function() {
+    itemCount = 0;
+    $('#itemCount').html('').css('display', 'none');
+    $('#cartItems').html('');
+  }); 
+  /*carousel code*/
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+
+   /*Validation code*/
+     document.getElementById("firstName").focus();
+        /* VALIDATION*/
+        $('.form-control').blur(function(){
+            var alertMessage = '<p class="alert m-0 text-danger">Please fill out this field.</p>';
+            console.log('blurred element')
+            $(this).parent().find('.alert').remove();
+            $(this).css('border-color', '#ced4da');
+            if( $(this).val().length === 0 ) {
+                console.log('not valid')
+                $(this).parent().append(alertMessage);
+                $(this).css('border-color', 'orange');
+            }
+            if( $('#firstName' && '#lastName' && '#email' && '#city' && '#state' && '#zip').val().length > 0){
+                $('#submitBtn').removeAttr('disabled');
+            };
+        });
+
+
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+
+ $(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+</script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md  fixed-top">
+      <a class="navbar-brand" href="index.html" style="color: #f48941; border-style: none; font-size: 200%; vertical-align: baseline;padding-left: 20px;">TerpChef</a>
+      <button class="navbar-toggler" fixed-top type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarsExample04">
+        <ul class="navbar-nav mr-auto " >
+        <li class="nav-item ">
+            <a class="nav-link" href="build.html" >BUILD</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="faq.html">FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shopcart.html">CART</a> 
+
+
+          </li>  
+         
+            <div id="cart-container" >
+              <span id="dis">
+                 <i class="fa fa-shopping-cart" style="font-size:24px; color: white;"></i>
+              </span>
+            <div id="cart">
+             
+              
+            </div>
+
+            <span id="itemCount"></span>
+          </div>
+              
+
+        </ul>
+</div>
+ </nav>
+
+        
+
+
+
+     
+<div class="jumbotron2 splash" ">
+
+</div>
+<h1 class="title">BUILD</h1>
+<nav class="nav d-flex justify-content-between subbar" >
+  <a href="capsule.html" class="btn btn-secondary  btn-lg">Capsules</a>
+  <a href="cartridge.html" class="btn btn-secondary  btn-lg">Cartridges</a>
+  <a href="tincture.html" class="btn btn-secondary  btn-lg">Tinctures</a>
+    <a href="topical.html" class="btn btn-secondary btn-lg">Topicals</a>
+
+        </nav>
+
+<div class="container-fluid" ">
+       <div class="row featurette ">
+          <div class="col-md-8">
+            <h2 class="display-5">How It Works</h2>
+            <h4 class="text-muted">A Designer Cannabinoid Experience</h4>
+            <p class="lead text-muted">At TerpChef we let you choose the specific cannabinoids and terpenes that go into your product. With a growing array of naturally extracted cannabinoids and terpenes we can provide a huge variety of different combinations with precise dosing and a 100% THC free guarantee.<br>Just select your starting build above, or check out some of our favorite blends below! </p>
+        
+          <p><a class="btn btn-primary btn-lg" href="faq.html" role="button">Learn more &raquo;</a></p>
+          </div>
+
+          <div class="col-md-4">
+            <img class="featurette-image img-fluid mx-auto" src="img/noids.png" alt="Cannabinoid source">
+          </div>
+        </div>
+        <br>
+       </div>
+
+     <br>
+      <div class="row" style="margin:  50px;">
+            <div class="col-md-4">
+              <div class="card product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/cap_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>NOCHE</h2>
+                  <p class="card-text">A capsule optimized for rest, contains Lanulin, Melatonin, and CBN.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg btn-outline-secondary add">Add</button>
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/cart_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>ZEST</h2>
+                  <p class="card-text">A citrusy daytime blend, contains Pinene, Limonene, CBC, and CBD.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg btn-outline-secondary add">Add</button>
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/cart_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>MELLO</h2>
+                  <p class="card-text">A balmy evening blend, contains CBN, Linalool, and Myrcene.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg  add">Add</button>
+                      
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/drop_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>TRUFF</h2>
+                  <p class="card-text">A tincture made to accompany sweet food or drink, contains Limonene, Ocimene, CBG, and CBD.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg  add">Add</button>
+                      
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="col-md-4">
+              <div class="card product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/drop_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>AERY</h2>
+                  <p class="card-text">A tincture made for daytime peacefulness and wellbeing, contains Pinene, Ocimene, CBC, and CBD.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg  add">Add</button>
+                      
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  product1 mb-4 shadow-sm">
+                <img class="card-img-top" src="img/top_sm.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2>GBALM</h2>
+                  <p class="card-text">A special topical blend for sore muscles and joints, contains CBD, CBC, Capsacin, and Humulene.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-lg  add">Add</button>
+                      
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+ 
+   
+
+
+   
+</body>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted fda"" ><a href="faq.html" >* CLICK OR TAP HERE FOR FOOD AND DRUG ADMINISTRATION (FDA) DISCLOSURE *</a></span>
+      </div>
+    </footer>
+
+
+</html>
